@@ -33,26 +33,26 @@ const homeFaqItems = [
   },
   {
     question: 'Hur fungerar ROT avdraget?',
-    answer: 'Som privatperson har du rätt till ROT avdrag som reducerar arbetskostnaden med 30 %. Vi sköter all administration direkt med Skatteverket och drar av beloppet på din faktura.',
+    answer: 'Som privatperson har du rätt till ROT avdrag som reducerar arbetskostnaden med 30 % vid ombyggnad, tillbyggnad och dränering på befintlig bostad. Vi sköter all administration direkt med Skatteverket.',
   },
   {
     question: 'Lämnar ni garanti på utfört arbete?',
     answer: 'Ja, vi arbetar alltid enligt gällande branschregler och lämnar fullständiga garantier på både utfört arbete och material.',
   },
   {
-    question: 'Hjälper ni till med både små och stora projekt?',
-    answer: 'Ja, vi åtar oss allt från mindre renoveringar och servicearbeten till mer omfattande nybyggnationer och tillbyggnader.',
+    question: 'Hjälper ni till med både mindre och större markprojekt?',
+    answer: 'Ja, vi åtar oss allt från mindre trädgårdsjusteringar, murar och stensättning till fullständiga dräneringar och husgrunder.',
   },
   {
     question: 'Hur går processen till från start till mål?',
-    answer: 'Vi inleder med en dialog kring dina önskemål och förutsättningar, tar fram en tydlig offert och sätter en överenskommen tidsplan innan arbetet påbörjas.',
+    answer: 'Vi inleder med dialog och platsbesök kring dina önskemål, tar fram en tydlig offert med fast pris och sätter en överenskommen tidsplan innan arbetet startar.',
   },
 ];
 
 export default function Home() {
   usePageTitle(
-    'Dyringe Entreprenad AB | Grävning, Byggnation & Betong i Örebro',
-    'Dyringe Entreprenad AB utför professionella entreprenadarbeten inom grävning, markarbete, byggnation, betong och maskintjänster i Örebro med omnejd. Begär kostnadsfri offert!'
+    'WI Mark & Anläggning AB | Dränering, Husgrunder & Murar i Jönköping',
+    'WI Mark & Anläggning AB utför professionella entreprenadarbeten inom dränering, husgrunder, murar, stenytor och maskintjänster i Jönköping med omnejd. Begär kostnadsfri offert!'
   );
 
   const { hash, state } = useLocation();
@@ -120,7 +120,7 @@ export default function Home() {
       const promise = video.play();
       if (promise !== undefined) {
         promise.catch(() => {
-          // Autoplay blocked (e.g. iOS Low Power Mode) — will unlock on user interaction
+          // Autoplay blocked (e.g. iOS Low Power Mode)
         });
       }
     };
@@ -147,8 +147,6 @@ export default function Home() {
       window.removeEventListener('click', unlockPlay);
     };
   }, [isMobile]);
-
-
 
   return (
     <main style={{ fontFamily: 'var(--font-family)' }}>
@@ -215,33 +213,33 @@ export default function Home() {
             {/* Top Location Line */}
             <ScrollReveal animation="fade-down" delay={0} duration={0.6}>
               <span style={{
-                fontFamily: "'Outfit', sans-serif",
-                letterSpacing: '0.18em',
+                fontFamily: 'var(--font-heading)',
+                letterSpacing: '0.22em',
                 textTransform: 'uppercase',
-                fontSize: 'clamp(0.74rem, 1.2vw, 0.86rem)',
+                fontSize: 'clamp(0.85rem, 1.3vw, 1.05rem)',
                 fontWeight: 700,
                 color: 'rgba(255, 255, 255, 0.95)',
                 display: 'block',
                 marginBottom: '14px',
               }}>
-                UTGÅR FRÅN ÖREBRO MED OMNEJD
+                UTGÅR FRÅN JÖNKÖPING MED OMNEJD
               </span>
             </ScrollReveal>
 
             {/* Huge Bold Headline (H1) */}
             <ScrollReveal animation="fade-up" delay={100} duration={0.8}>
               <h1 style={{
-                fontFamily: 'var(--font-family)',
-                fontSize: 'clamp(2.4rem, 7vw, 5rem)',
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(3rem, 8.5vw, 5.6rem)',
                 fontWeight: 900,
-                lineHeight: 1.0,
+                lineHeight: 0.98,
                 textTransform: 'uppercase',
-                letterSpacing: '-0.015em',
+                letterSpacing: '0.01em',
                 margin: '0 0 20px 0',
                 textShadow: '0 4px 18px rgba(0, 0, 0, 0.75)',
               }}>
-                <span style={{ color: '#ffffff', display: 'block' }}>DYRINGE</span>
-                <span style={{ color: 'var(--color-primary)', display: 'block', whiteSpace: 'nowrap' }}>ENTREPRENAD AB</span>
+                <span style={{ color: '#ffffff', display: 'block' }}>WI MARK &</span>
+                <span style={{ color: 'var(--color-primary)', display: 'block', whiteSpace: 'nowrap' }}>ANLÄGGNING AB</span>
               </h1>
             </ScrollReveal>
 
@@ -257,7 +255,7 @@ export default function Home() {
                 textShadow: '0 2px 12px rgba(0, 0, 0, 0.85)',
                 fontWeight: 400,
               }}>
-                Vi utgår från Örebro och erbjuder heltäckande tjänster inom grävning, byggnation, betonggjutning och maskinförare. Med modern maskinpark och gedigen yrkeskunskap förverkligar vi dina byggprojekt från första spadtag till färdigt resultat.
+                Vi utgår från Jönköping och erbjuder heltäckande entreprenadtjänster inom dräneringar, husgrunder, murar, stenytor och maskintjänster. Med modern maskinpark och yrkesskicklighet förverkligar vi dina mark och byggprojekt från första spadtag till färdigt resultat.
               </p>
             </ScrollReveal>
 
@@ -276,11 +274,11 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  href="tel:0761129106"
+                  href="tel:0724487667"
                 >
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                     <Phone size={18} />
-                    Ring 076-112 91 06
+                    Ring 072-448 76 67
                   </span>
                 </Button>
               </div>
@@ -289,7 +287,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── SECTION 2: VÅRA TJÄNSTER (MODERN CLEAN PHOTO CARDS) ───── */}
+      {/* ── SECTION 2: VÅRA TJÄNSTER ───────────────────────────────── */}
       <section
         id="tjanster"
         style={{
@@ -342,7 +340,7 @@ export default function Home() {
                   lineHeight: 1.65,
                   margin: '0 0 12px 0',
                 }}>
-                  Från grävning och byggnation till betong och maskinförare i Örebro med omnejd.
+                  Från dränering och husgrunder till murar, stenytor och maskintjänster i Jönköping med omnejd.
                 </p>
                 <Link
                   to="/tjanster"
@@ -362,7 +360,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Clean Modern Photo Grid - 4 Services with Icons */}
+          {/* Clean Modern Photo Grid */}
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
@@ -495,7 +493,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── SECTION 3: DIN LOKALA BYGGFIRMA / OM OSS ─────────────── */}
+      {/* ── SECTION 3: OM OSS ─────────────────────────────────────── */}
       <section style={{ background: '#ffffff', padding: 'clamp(60px, 8vw, 100px) 0', borderTop: '1px solid #e2e8f0' }}>
         <div style={container}>
           <div className="two-col" style={{
@@ -519,7 +517,7 @@ export default function Home() {
               }}>
                 <img
                   src={images.about.hero.url || '/about.jpg'}
-                  alt="Dyringe Entreprenad AB"
+                  alt="WI Mark & Anläggning AB"
                   style={{
                     width: '100%',
                     height: '100%',
@@ -540,7 +538,7 @@ export default function Home() {
                   lineHeight: 1.2,
                   margin: '0 0 14px 0',
                 }}>
-                  Din lokala entreprenadpartner i Örebro med omnejd
+                  Din lokala entreprenadpartner i Jönköping med omnejd
                 </h2>
               </ScrollReveal>
               <ScrollReveal animation="scale-x-left" delay={200} duration={0.6}>
@@ -553,16 +551,16 @@ export default function Home() {
                   lineHeight: 1.75,
                   margin: '0 0 32px 0',
                 }}>
-                  Dyringe Entreprenad AB erbjuder ett brett och professionellt utbud av entreprenadtjänster med högsta kvalitet och noggrannhet. Med bas i Örebro utför vi allt inom grävning, schaktning, tomtplanering, byggnation, betonggjutning och maskintjänster i Örebro med omnejd. Vi sätter alltid kunden och fastighetens förutsättningar i första rummet för hållbara resultat från start till mål.
+                  WI Mark & Anläggning AB erbjuder ett komplett utbud av entreprenadtjänster med högsta kvalitet och noggrannhet. Med bas i Jönköping utför vi allt inom dränering, schaktning, husgrunder, stödmurar, stenytor, transportverksamhet och maskintjänster i Jönköping med omnejd. Vi sätter alltid kunden och fastighetens förutsättningar i första rummet för hållbara resultat från start till mål.
                 </p>
               </ScrollReveal>
               <ScrollReveal animation="fade-right" duration={0.8} delay={200}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                   {[
-                    'En och samma personliga kontaktperson från start till mål',
+                    'En och samma personliga kontaktperson genom hela projektet',
                     'Tydliga offerter, fasta priser och direkt ROT avdrag (30 %)',
-                    'Moderna maskiner och noggrant utförda mark och byggarbeten',
-                    'Lokal närvaro och snabb service i Örebro med omnejd',
+                    'Moderna maskiner och noggrant utförda mark och anläggningsarbeten',
+                    'Lokal närvaro och snabb återkoppling i Jönköping med omnejd',
                   ].map((item, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                       <CheckCircle2 size={24} color="var(--color-primary)" style={{ flexShrink: 0 }} />
@@ -588,7 +586,7 @@ export default function Home() {
       {/* ── SECTION 4: REFERENSER / PROJEKT ──────────────────────── */}
       <ProjectsGallery />
 
-      {/* ── SECTION 5: HUR DET FUNGERAR (3-STEGS PROCESS MED PILAR) ── */}
+      {/* ── SECTION 5: HUR DET FUNGERAR ──────────────────────────── */}
       <section style={{
         background: '#ffffff',
         padding: 'clamp(60px, 8vw, 100px) 0',
@@ -660,12 +658,12 @@ export default function Home() {
               {
                 icon: MapPin,
                 title: '2. Platsbesök & offert',
-                desc: 'Vi går igenom förutsättningarna på plats och tar fram en tydlig offert med fast pris och tidsplan.',
+                desc: 'Vi går igenom markförutsättningarna på plats och tar fram en tydlig offert med fast pris och tidsplan.',
               },
               {
                 icon: Hammer,
                 title: '3. Vi utför arbetet',
-                desc: 'Vi genomför mark eller byggarbetet med högsta precision, moderna maskiner och trygga garantier.',
+                desc: 'Vi genomför markarbetet med högsta precision, moderna maskiner och trygga kvalitetsgarantier.',
               },
             ].map(({ icon: Icon, title, desc }, i) => (
               <div key={i} style={{ display: 'contents' }}>
@@ -822,7 +820,7 @@ export default function Home() {
                       <Star key={i} size={15} fill="#FBBC05" color="#FBBC05" />
                     ))}
                   </div>
-                  <span style={{ color: 'var(--color-gray-600)', fontSize: '0.85rem' }}>(Omdömen i Örebro med omnejd)</span>
+                  <span style={{ color: 'var(--color-gray-600)', fontSize: '0.85rem' }}>(Omdömen i Jönköping med omnejd)</span>
                 </div>
               </ScrollReveal>
             </div>
@@ -832,8 +830,8 @@ export default function Home() {
             {[
               {
                 name: 'Johan Eklund',
-                location: 'Örebro',
-                text: 'Vi anlitade Dyringe Entreprenad AB för tomtplanering, schaktning och grundgrävning inför vårt garagebygge. Otroligt skicklig maskinförare, snabbt genomfört och perfekt resultat. Rekommenderas starkt!',
+                location: 'Jönköping',
+                text: 'Vi anlitade WI Mark & Anläggning AB för dränering och schaktning runt vår villa. Fantastiskt bemötande, snabbt genomfört och tomten lämnades i toppskick. Otroligt skickliga maskinförare!',
                 stars: 5,
                 date: 'för 2 veckor sedan',
                 authorSub: 'Lokal guide • 14 omdömen',
@@ -841,8 +839,8 @@ export default function Home() {
               },
               {
                 name: 'Karin & Markus Lindqvist',
-                location: 'Kumla',
-                text: 'Dyringe Entreprenad hjälpte oss med gjutning av betongplatta och markarbeten. Mycket trevligt bemötande, tydlig offert och ett fantastiskt slutresultat. Punktliga och professionella!',
+                location: 'Huskvarna',
+                text: 'William och hans team hjälpte oss med anläggning av stödmur och stenytor vid uppfarten. Noggrant underarbete, raka fina linjer och ett fantastiskt slutresultat. Rekommenderas varmt!',
                 stars: 5,
                 date: 'för en månad sedan',
                 authorSub: '8 omdömen',
@@ -850,8 +848,8 @@ export default function Home() {
               },
               {
                 name: 'Fredrik Söderström',
-                location: 'Hallsberg',
-                text: 'Toppklassig entreprenör! De utförde dränering och markberedning runt hela villan. Allt flöt på smidigt från start till mål och tomten lämnades ren och snygg.',
+                location: 'Habo',
+                text: 'Toppklassig entreprenör! De gjöt betongplatta och ordnade markarbetet inför vårt garagebygge. Allt flöt på enligt tidsplan och offert utan några som helst problem.',
                 stars: 5,
                 date: 'för 2 månader sedan',
                 authorSub: 'Lokal guide • 21 omdömen',
@@ -869,7 +867,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── SECTION 8: VANLIGA FRÅGOR (FAQ - DARK CONTRAST BREAK) ── */}
+      {/* ── SECTION 8: FAQ ───────────────────────────────────────── */}
       <section style={{
         background: '#0f172a',
         padding: 'clamp(70px, 9vw, 110px) 0',
@@ -901,89 +899,11 @@ export default function Home() {
       {/* ── SECTION 10: CTA BANNER ───────────────────────────────── */}
       <CTABanner />
 
-      {/* ── TWEAKED SPACED STYLES ───────────────────────────────── */}
       <style>{`
-        .spaced-screenshot-grid {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: clamp(20px, 3vw, 32px);
-        }
-        .spaced-tile {
-          position: relative;
-          display: block;
-          text-decoration: none;
-          aspect-ratio: 16/10;
-          border-radius: 16px;
-          overflow: hidden;
-          background: #000;
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-          border: 1px solid rgba(0, 0, 0, 0.06);
-          transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease;
-        }
-        .spaced-tile-img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          display: block;
-          transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .spaced-tile-overlay {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.88) 100%);
-          transition: background 0.4s ease;
-        }
-        .spaced-tile:hover {
-          transform: translateY(-6px);
-          border-color: rgba(217, 119, 6, 0.45);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
-        }
-        .spaced-tile:hover .spaced-tile-img {
-          transform: scale(1.06);
-        }
-        .spaced-tile:hover .spaced-tile-overlay {
-          background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.92) 100%);
-        }
-        .spaced-tile-content {
-          position: absolute;
-          inset: auto 0 0 0;
-          padding: 24px 24px 22px 24px;
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-          z-index: 2;
-        }
-        .spaced-tile-left {
-          display: flex;
-          flex-direction: column;
-        }
-        .spaced-tile-title {
-          color: #ffffff;
-          font-weight: 700;
-          font-size: clamp(1.1rem, 1.8vw, 1.4rem);
-          margin: 0;
-          line-height: 1.2;
-          letter-spacing: -0.01em;
-          text-shadow: 0 2px 8px rgba(0,0,0,0.8);
-        }
-        .spaced-tile-right {
-          flex-shrink: 0;
-          margin-left: 12px;
-        }
-        .spaced-tile-action {
-          color: rgba(255, 255, 255, 0.85);
-          font-size: 0.82rem;
-          font-weight: 600;
-          transition: color 0.3s ease;
-        }
-        .spaced-tile:hover .spaced-tile-action {
-          color: var(--color-primary);
-        }
-
         .steps-grid-wrapper {
           display: flex;
           align-items: flex-start;
-          justify-content: center;
+          justifyContent: center;
         }
         .review-card-el {
           background: var(--color-white);
@@ -1002,16 +922,14 @@ export default function Home() {
         .step-arrow {
           display: flex;
           align-items: center;
-          justify-content: center;
+          justifyContent: center;
           width: 80px;
           height: 70px;
         }
         @media (max-width: 1024px) {
-          .spaced-screenshot-grid { grid-template-columns: repeat(2, 1fr) !important; }
           .reviews-grid { grid-template-columns: repeat(2, 1fr) !important; }
         }
         @media (max-width: 768px) {
-          .spaced-screenshot-grid { grid-template-columns: 1fr !important; }
           .two-col { grid-template-columns: 1fr !important; gap: 32px !important; }
           .reviews-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
           .steps-grid-wrapper { flex-direction: column !important; align-items: center !important; gap: 24px !important; }

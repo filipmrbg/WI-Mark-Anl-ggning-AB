@@ -14,8 +14,8 @@ const container: React.CSSProperties = {
 
 export default function ServicesOverview() {
   usePageTitle(
-    'Våra Tjänster | Dyringe Entreprenad AB Örebro',
-    'Utforska våra entreprenadtjänster: Grävning, markarbete, byggnation, betonggjutning och maskintjänster i Örebro med omnejd.'
+    'Våra Tjänster | WI Mark & Anläggning AB Jönköping',
+    'Utforska våra entreprenadtjänster: Dränering, husgrunder, murar, stenytor och entreprenadverksamhet i Jönköping med omnejd.'
   );
 
   const { hash } = useLocation();
@@ -82,7 +82,7 @@ export default function ServicesOverview() {
               margin: '0 auto',
               lineHeight: 1.65,
             }}>
-              Dyringe Entreprenad AB erbjuder professionella entreprenadtjänster inom grävning, markarbete, byggnation, betong och maskintjänster i Örebro med omnejd.
+              WI Mark & Anläggning AB erbjuder professionella entreprenadtjänster inom dränering, husgrunder, murar, stenytor och maskintjänster i Jönköping med omnejd.
             </p>
           </ScrollReveal>
         </div>

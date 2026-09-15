@@ -3,14 +3,14 @@ import { Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import images from '../data/images';
 
 const serviceLinks = [
-  { label: 'Grävning', href: '/tjanster#gravning' },
-  { label: 'Byggnation', href: '/tjanster#byggnation' },
-  { label: 'Betong', href: '/tjanster#betong' },
-  { label: 'Maskinförare', href: '/tjanster#maskinforare' },
+  { label: 'Dränering & Grävarbete', href: '/tjanster#gravning' },
+  { label: 'Husgrunder & Byggnation', href: '/tjanster#byggnation' },
+  { label: 'Stenytor & Murar', href: '/tjanster#betong' },
+  { label: 'Mark & Anläggning', href: '/tjanster#maskinforare' },
 ];
 
 const socialIcons = [
-  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/dyringe_entreprenadab/' },
+  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/wi_markanlaggningab' },
 ];
 
 export default function Footer() {
@@ -56,7 +56,7 @@ export default function Footer() {
               </Link>
             </div>
             <p style={{ color: 'var(--color-gray-600)', fontSize: '0.9rem', lineHeight: 1.7, margin: '0 0 20px 0' }}>
-              Dyringe Entreprenad AB erbjuder professionella entreprenadtjänster inom grävning, byggnation, betong och maskinförare med högsta kvalitet och noggrannhet i Örebro med omnejd.
+              WI Mark & Anläggning AB erbjuder professionella entreprenadtjänster inom dränering, husgrunder, murar, stenytor och maskintjänster med högsta kvalitet och noggrannhet i Jönköping med omnejd.
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
               {socialIcons.map(({ Icon, label, href }) => (
@@ -129,23 +129,23 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.95rem' }}>
 
               <a
-                href="mailto:dyringe@outlook.com"
+                href="mailto:william@wi-mark.se"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Mail size={16} strokeWidth={2} />
                 </div>
-                <span>dyringe@outlook.com</span>
+                <span>william@wi-mark.se</span>
               </a>
 
               <a
-                href="tel:0761129106"
+                href="tel:0724487667"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Phone size={16} strokeWidth={2} />
                 </div>
-                <span>076-112 91 06</span>
+                <span>072-448 76 67</span>
               </a>
 
               <div
@@ -154,7 +154,7 @@ export default function Footer() {
                 <div className="footer-contact-icon">
                   <MapPin size={16} strokeWidth={2} />
                 </div>
-                <span>Örebro • Kumla • Hallsberg • Närke</span>
+                <span>Jönköping • Huskvarna • Habo • Bankeryd</span>
               </div>
             </div>
           </div>
@@ -176,7 +176,8 @@ export default function Footer() {
           }}
         >
           <div style={{ display: 'flex', gap: '12px', alignItems: 'center', color: 'var(--color-gray-600)', fontSize: '0.875rem', flexWrap: 'wrap' }}>
-            <span>© 2026 Dyringe Entreprenad AB</span>
+            <span>© 2026 WI Mark & Anläggning AB</span>
+            <span>• Org.nr 559588-4015</span>
           </div>
         </div>
       </div>
@@ -225,4 +226,3 @@ export default function Footer() {
     </footer>
   );
 }
-

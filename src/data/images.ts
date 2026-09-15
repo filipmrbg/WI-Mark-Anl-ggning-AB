@@ -2,7 +2,7 @@
  * CENTRALIZED IMAGE CONFIGURATION
  *
  * All images used across the template are defined here.
- * To customize for a new company: replace the URLs below.
+ * Customized for WI Mark & Anläggning AB
  */
 
 export interface ImageSlot {
@@ -62,161 +62,149 @@ export interface SiteImages {
 const images: SiteImages = {
   logo: {
     url: '/logo.png',
-    alt: 'Dyringe Entreprenad AB',
+    alt: 'WI Mark & Anläggning AB Logotyp',
   },
   logoDark: {
     url: '/logo-dark.png',
-    alt: 'Dyringe Entreprenad AB',
+    alt: 'WI Mark & Anläggning AB Logotyp',
   },
 
   hero: {
     background: {
       url: '/hero-main.webp',
-      alt: 'Dyringe Entreprenad AB grävning, byggnation och betong Örebro',
+      alt: 'WI Mark & Anläggning AB markarbete, dränering och anläggning i Jönköping',
     },
   },
 
   services: {
     nybyggnation: {
       url: '/service-gravning.webp',
-      alt: 'Grävning och markarbete i Örebro',
+      alt: 'Dränering, schaktning och markarbete i Jönköping',
     },
     smahusbyggnation: {
       url: '/service-byggnation.webp',
-      alt: 'Byggnation och snickeri i Örebro',
+      alt: 'Husgrunder, formsättning och byggnation i Jönköping',
     },
     renovering: {
       url: '/service-betong.webp',
-      alt: 'Betong och gjutning i Örebro',
+      alt: 'Betong, murar och stenytor i Jönköping',
     },
     ombyggnation: {
       url: '/service-markarbete.png',
-      alt: 'Maskintjänster och entreprenad i Örebro',
+      alt: 'Mark och anläggning i Jönköping',
     },
     totalentreprenad: {
       url: '/service-maskinforare.webp',
-      alt: 'Maskinförare och entreprenad i Örebro',
+      alt: 'Maskintjänster och entreprenad i Jönköping',
     },
   },
 
   gallery: [
     {
-      url: '/gallery/dyringe-projekt-1.png',
-      alt: 'Dyringe Entreprenad AB stomresning och byggnation',
-    },
-    {
-      url: '/gallery/dyringe-projekt-2.png',
-      alt: 'Dyringe Entreprenad AB schaktning och poolgrävning med grävmaskin',
-    },
-    {
-      url: '/gallery/dyringe-projekt-3.png',
-      alt: 'Dyringe Entreprenad AB färdigställt pooldäck, altan och pooltak',
-    },
-    {
       url: '/gallery/gallery-1.jpg',
-      alt: 'Dyringe Entreprenad AB markarbete och tomtplanering',
+      alt: 'WI Mark & Anläggning AB markarbete och tomtplanering',
     },
     {
       url: '/gallery/gallery-2.jpg',
-      alt: 'Dyringe Entreprenad AB betonggjutning och platta på mark',
+      alt: 'WI Mark & Anläggning AB betonggjutning och husgrund',
     },
     {
       url: '/gallery/gallery-3.jpg',
-      alt: 'Dyringe Entreprenad AB grävarbete och schaktning',
+      alt: 'WI Mark & Anläggning AB dränering och schaktning',
     },
     {
       url: '/gallery/gallery-4.jpg',
-      alt: 'Dyringe Entreprenad AB byggnation och träkonstruktion',
+      alt: 'WI Mark & Anläggning AB murar och stensättning',
     },
     {
       url: '/gallery/gallery-5.jpg',
-      alt: 'Dyringe Entreprenad AB maskinentreprenad och grävmaskin',
+      alt: 'WI Mark & Anläggning AB maskintjänster och entreprenad',
     },
     {
       url: '/gallery/gallery-6.jpg',
-      alt: 'Dyringe Entreprenad AB färdigställt anläggningsprojekt',
+      alt: 'WI Mark & Anläggning AB färdigställd anläggning',
     },
   ],
 
   cta: {
     banner: {
       url: '/hero-main.webp',
-      alt: 'Dyringe Entreprenad AB projekt',
+      alt: 'WI Mark & Anläggning AB projekt',
     },
     midSection: {
       url: '/hero-main.webp',
-      alt: 'Dyringe Entreprenad AB arbetsplats Örebro',
+      alt: 'WI Mark & Anläggning AB arbetsplats Jönköping',
     },
   },
 
   about: {
     hero: {
       url: '/about.jpg',
-      alt: 'Dyringe Entreprenad AB',
+      alt: 'WI Mark & Anläggning AB',
     },
     teamMember: {
       url: '/logo.png',
-      alt: 'Teammedlem Dyringe Entreprenad AB',
+      alt: 'Teammedlem WI Mark & Anläggning AB',
     },
   },
 
   whyChooseUs: {
     url: '/why-choose-us.webp',
-    alt: 'Noggrant hantverk och entreprenad i detalj',
+    alt: 'Noggrant markarbete och entreprenad i detalj',
   },
 
   ideaToResult: {
     url: '/idea-to-result.webp',
-    alt: 'Från idé och planering till färdigt resultat',
+    alt: 'Från planering och markarbete till färdigt resultat',
   },
 
   portfolio: [
     {
       image: {
         url: '/gallery/gallery-1.jpg',
-        alt: 'Markarbete och tomtplanering i Örebro',
+        alt: 'Markarbete och tomtplanering i Jönköping',
       },
-      title: 'Markarbete & Tomtplanering',
+      title: 'Tomtplanering & Schaktning',
       category: 'Markarbete',
     },
     {
       image: {
         url: '/gallery/gallery-2.jpg',
-        alt: 'Gjutning av betongplatta i Örebro',
+        alt: 'Gjutning av husgrund i Jönköping',
       },
-      title: 'Betongplatta & Grundgjutning',
-      category: 'Betong',
+      title: 'Husgrunder & Betongplatta',
+      category: 'Husgrunder',
     },
     {
       image: {
         url: '/gallery/gallery-3.jpg',
-        alt: 'Schaktning och grävning i Örebro',
+        alt: 'Dränering och fuktskydd i Jönköping',
       },
-      title: 'Grävarbete & Schaktning',
-      category: 'Grävning',
+      title: 'Husdränering & Ledningsarbete',
+      category: 'Dränering',
     },
     {
       image: {
         url: '/gallery/gallery-4.jpg',
-        alt: 'Byggnation och träkonstruktion i Örebro',
+        alt: 'Murar och stenytor i Jönköping',
       },
-      title: 'Byggnation & Träkonstruktion',
-      category: 'Byggnation',
+      title: 'Stensättning & Stödmurar',
+      category: 'Stenytor & Murar',
     },
     {
       image: {
         url: '/gallery/gallery-5.jpg',
-        alt: 'Maskintjänster och grävmaskinist i Örebro',
+        alt: 'Maskintjänster och grävmaskinist i Jönköping',
       },
-      title: 'Maskintjänster & Entreprenad',
-      category: 'Maskintjänster',
+      title: 'Maskintjänster & Transporter',
+      category: 'Entreprenad',
     },
     {
       image: {
         url: '/gallery/gallery-6.jpg',
-        alt: 'Färdigställt entreprenadprojekt Örebro',
+        alt: 'Färdigställt entreprenadprojekt Jönköping',
       },
-      title: 'Färdigställd Entreprenad',
+      title: 'Färdigställd Trädgårdsanläggning',
       category: 'Totalentreprenad',
     },
   ],
@@ -233,7 +221,7 @@ const images: SiteImages = {
       },
       section2: {
         url: '/hero-main.webp',
-        alt: 'Arbetsplats Örebro',
+        alt: 'Arbetsplats Jönköping',
       },
     },
     dranering: {
@@ -253,7 +241,7 @@ const images: SiteImages = {
     betong: {
       hero: {
         url: '/service-betong.webp',
-        alt: 'Gjutning av betongplatta',
+        alt: 'Gjutning av betongplatta och murar',
       },
       section1: {
         url: '/service-betong.webp',
@@ -268,5 +256,3 @@ const images: SiteImages = {
 };
 
 export default images;
-
-

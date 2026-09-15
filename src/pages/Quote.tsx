@@ -14,15 +14,15 @@ const container: React.CSSProperties = {
 const faqItems = [
   {
     question: 'Kostar platsbesöket något?',
-    answer: 'Nej, platsbesök och offert är alltid kostnadsfritt. Vi besöker din fastighet, mäter höjder, kollar förutsättningar och tar fram ett tydligt prisförslag helt utan förbindelser.',
+    answer: 'Nej, platsbesök och offert är alltid helt kostnadsfritt. Vi besöker din fastighet, mäter höjder, kollar markförutsättningar och tar fram ett tydligt prisförslag utan förbindelser.',
   },
   {
     question: 'Hur snabbt kan ni påbörja projektet?',
-    answer: 'Det styrs av projektets storlek samt vår nuvarande kapacitet och planering. Mindre jobb kan vi ofta påbörja inom två veckor, medan större projekt planeras in med god framförhållning.',
+    answer: 'Det styrs av projektets omfattning samt vår planering. Mindre jobb kan vi ofta påbörja inom 1 till 2 veckor, medan större entreprenader planeras in med god framförhållning.',
   },
   {
     question: 'Fungerar ROT avdrag för era tjänster?',
-    answer: 'Ja, för godkända renoverings och ombyggnadsarbeten på din bostad drar vi av ROT avdraget på 30 % av arbetskostnaden direkt på fakturan.',
+    answer: 'Ja, för godkända renoverings, dränerings och ombyggnadsarbeten på din bostad drar vi av 30 % på arbetskostnaden direkt på fakturan.',
   },
 ];
 
@@ -53,8 +53,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | 
 
 export default function Quote() {
   usePageTitle(
-    'Begär offert | Dyringe Entreprenad AB',
-    'Beskriv ditt projekt och begär en kostnadsfri offert för grävning, markarbete, byggnation, betonggjutning eller maskintjänster i Örebro med omnejd.'
+    'Begär offert | WI Mark & Anläggning AB',
+    'Beskriv ditt projekt och begär en kostnadsfri offert för dränering, husgrunder, murar, stenytor eller entreprenadtjänster i Jönköping med omnejd.'
   );
   const [name, setName]       = useState('');
   const [email, setEmail]     = useState('');
@@ -263,13 +263,12 @@ export default function Quote() {
                     onBlur={blurInput}
                   >
                     <option value="">Välj tjänst...</option>
-                    <option value="gravning">Grävning</option>
-                    <option value="byggnation">Byggnation</option>
-                    <option value="betong">Betong</option>
-                    <option value="maskintjanster">Maskintjänster</option>
+                    <option value="gravning">Dränering & Grävarbete</option>
+                    <option value="byggnation">Husgrunder & Byggnation</option>
+                    <option value="betong">Stenytor & Murar</option>
+                    <option value="maskintjanster">Mark & Anläggning</option>
                     <option value="annat">Annat projekt</option>
                   </select>
-
 
                   <label style={{ display: 'block', marginBottom: '4px', fontSize: '0.85rem', fontWeight: 600, color: 'var(--color-text-dark)' }}>
                     Projektbeskrivning *
@@ -359,7 +358,7 @@ export default function Quote() {
                     </h3>
                   </div>
                   <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                    Vi drar av ROT avdraget direkt på din faktura när arbetet är berättigat till detta.
+                    Vi drar av ROT avdraget på 30 % direkt på din faktura när arbetet är berättigat till detta.
                   </p>
                 </div>
 
@@ -376,7 +375,7 @@ export default function Quote() {
                     </h3>
                   </div>
                   <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                    Innehar F skattsedel, ansvarsförsäkring och lämnar skriftliga garantier på allt utfört arbete.
+                    Innehar F-skattesedel, ansvarsförsäkring och lämnar skriftliga garantier på allt utfört arbete.
                   </p>
                 </div>
               </div>

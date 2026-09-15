@@ -14,7 +14,7 @@ const container: React.CSSProperties = {
 const faqItems = [
   {
     question: 'Arbetar ni med ROT avdrag?',
-    answer: 'Ja! Som privatperson får du 30 % avdrag på arbetskostnaden direkt på fakturan upp till 50 000 kr per person och år. Vi sköter all administration mot Skatteverket.',
+    answer: 'Ja! Som privatperson får du 30 % avdrag på arbetskostnaden direkt på fakturan upp till 50 000 kr per person och år vid renovering, ombyggnad och dränering. Vi sköter all administration mot Skatteverket.',
   },
   {
     question: 'Hur lång tid tar det att få ett prisförslag?',
@@ -22,11 +22,11 @@ const faqItems = [
   },
   {
     question: 'Vilka områden är ert huvudsakliga upptagningsområde?',
-    answer: 'Vi har vår bas i Örebro och utför uppdrag i Örebro, Kumla, Hallsberg, Närke och närliggande områden.',
+    answer: 'Vi har vår bas i Jönköping och utför uppdrag i Jönköping, Huskvarna, Habo, Bankeryd, Vaggeryd och närliggande områden.',
   },
   {
     question: 'Kan jag boka ett kostnadsfritt platsbesök?',
-    answer: 'Självklart! Kontakta oss via formuläret eller ring oss på 076-112 91 06 så bokar vi in en tid som passar dig.',
+    answer: 'Självklart! Kontakta oss via formuläret eller ring oss på 072-448 76 67 så bokar vi in en tid som passar dig.',
   },
 ];
 
@@ -57,8 +57,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | 
 
 export default function Contact() {
   usePageTitle(
-    'Kontakta Dyringe Entreprenad AB | Örebro',
-    'Kontakta Dyringe Entreprenad AB i Örebro. Vi utför allt inom grävning, schaktning, markarbete, byggnation och betong i Örebro med omnejd. Ring 076-112 91 06.'
+    'Kontakta WI Mark & Anläggning AB | Jönköping',
+    'Kontakta WI Mark & Anläggning AB i Jönköping. Vi utför allt inom dränering, husgrunder, murar, stenytor och entreprenadverksamhet i Jönköping med omnejd. Ring 072-448 76 67.'
   );
   const [name, setName]       = useState('');
   const [email, setEmail]     = useState('');
@@ -163,7 +163,7 @@ export default function Contact() {
                 Så når du oss
               </h2>
               <p style={{ color: 'var(--color-gray-600)', fontSize: '1rem', lineHeight: 1.8, margin: 0 }}>
-                Du kan nå oss via formuläret, telefon eller e-post. Oavsett om det gäller grävning, tomtplanering, markarbete, byggnation, betonggjutning eller maskintjänster hjälper vi dig gärna.
+                Du kan nå oss via formuläret, telefon eller e-post. Oavsett om det gäller dräneringar, husgrunder, murar, stenytor, transporter eller maskintjänster hjälper vi dig gärna.
               </p>
 
               <div style={{ marginTop: '40px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -186,12 +186,12 @@ export default function Contact() {
                     </p>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
                       <a
-                        href="tel:0761129106"
+                        href="tel:0724487667"
                         style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, transition: 'color 0.2s ease' }}
                         onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-primary)')}
                         onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
                       >
-                        076-112 91 06
+                        072-448 76 67
                       </a>
                     </div>
                   </div>
@@ -215,7 +215,7 @@ export default function Contact() {
                       Plats & Område
                     </p>
                     <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-                      Bas i Örebro • Kumla, Hallsberg, Närke & omnejd
+                      Bas i Jönköping • Huskvarna, Habo, Bankeryd & omnejd
                     </p>
                   </div>
                 </div>
@@ -238,18 +238,17 @@ export default function Contact() {
                       E-post
                     </p>
                     <a
-                      href="mailto:dyringe@outlook.com"
+                      href="mailto:william@wi-mark.se"
                       style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, transition: 'color 0.2s ease' }}
                       onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-primary)')}
                       onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
                     >
-                      dyringe@outlook.com
+                      william@wi-mark.se
                     </a>
                   </div>
                 </div>
               </div>
             </ScrollReveal>
-
 
             {/* Right: form */}
             <ScrollReveal animation="fade-left" duration={0.8} delay={100}>
@@ -359,10 +358,10 @@ export default function Contact() {
                     onBlur={blurInput}
                   >
                     <option value="">Välj tjänst...</option>
-                    <option value="gravning">Grävning</option>
-                    <option value="byggnation">Byggnation</option>
-                    <option value="betong">Betong</option>
-                    <option value="maskintjanster">Maskintjänster</option>
+                    <option value="gravning">Dränering & Grävarbete</option>
+                    <option value="byggnation">Husgrunder & Byggnation</option>
+                    <option value="betong">Stenytor & Murar</option>
+                    <option value="maskintjanster">Mark & Anläggning</option>
                     <option value="annat">Annat projekt</option>
                   </select>
 

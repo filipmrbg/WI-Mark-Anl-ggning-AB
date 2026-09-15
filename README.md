@@ -1,3 +1,3 @@
-# Dyringe Entreprenad AB
+# WI Mark & Anläggning AB
 
-Webbplats för Dyringe Entreprenad AB – markarbete, grävning, byggnation och betongarbeten i Örebro med omnejd.
+Webbplats för WI Mark & Anläggning AB – dräneringar, husgrunder, murar, stenytor och entreprenadverksamhet i Jönköping med omnejd.

@@ -35,125 +35,124 @@ export interface ServiceItem {
 export const services: ServiceItem[] = [
   {
     slug: 'gravning',
-    title: 'Grävning',
-    shortDescription: 'Professionella schaktarbeten, tomtplanering, grundgrävning, dränering och ledningsarbeten i Örebro med omnejd.',
-    heroText: 'Effektiva gräv och markarbeten med precision för trygga grunder och hållbara markytor.',
-    detailedDescription: `Planerar du ett markarbete, dränering av husgrund eller schaktning inför nybyggnation? Dyringe Entreprenad AB utför alla typer av grävarbeten med moderna maskiner och hög precision.
+    title: 'Dränering & Grävarbete',
+    shortDescription: 'Professionella dräneringar, schaktarbeten, tomtplanering och ledningsarbeten i Jönköping med omnejd.',
+    heroText: 'Effektiv dränering och noggrant markarbete för torra, trygga grunder och stabila markytor.',
+    detailedDescription: `Planerar du en husdränering, tomtplanering eller schaktning inför ett byggprojekt? WI Mark & Anläggning AB utför dräneringar och grävarbeten med moderna maskiner och högsta precision.
 
-Vi hjälper både privatpersoner, företag och fastighetsägare i Örebro med allt från tomtplanering och finplanering till kabelgrävning, vatten och avlopp samt fuktskyddande dränering.`,
+Vi hjälper privatpersoner, fastighetsägare och företag i Jönköping med allt från fuktskyddande husdränering och kabelgrävning till vatten, avlopp och markförberedelser.`,
     heroImage: '/service-gravning.webp',
     image: '/service-gravning.webp',
     href: '/tjanster#gravning',
-    tag: 'Grävning',
-    badge: 'Precision & Erfarenhet',
+    tag: 'Dränering',
+    badge: 'Precision & Trygghet',
     highlights: [
-      'Schaktning och tomtplanering',
-      'Grundgrävning inför gjutning och nybygge',
       'Husdränering och fuktskydd',
-      'Kabel och ledningsgrävning',
+      'Schaktning och tomtplanering',
+      'Grundgrävning inför nybygge och garage',
+      'Kabel och ledningsdragning',
     ],
     faq: [
       {
-        question: 'Hur snabbt kan ni påbörja ett grävarbete?',
-        answer: 'Mindre grävarbeten kan vi oftast påbörja inom 1 till 2 veckor beroende på säsong och maskinbokning.',
+        question: 'Hur vet man att det är dags att dränera om huset?',
+        answer: 'Tecken på att dräneringen behöver åtgärdas är fuktfläckar i källaren, unken lukt, färg som släpper från väggarna eller att det gått över 20–25 år sedan senaste dräneringen.',
       },
       {
-        question: 'Utför ni dränering av befintliga husgrunder?',
-        answer: 'Ja, vi utför kompletta dräneringar med godkända isoler och fuktskyddssystem som skyddar fastigheten mot markfukt.',
+        question: 'Hur snabbt kan ni påbörja ett dräneringsarbete?',
+        answer: 'Mindre till medelstora mark och dräneringsarbeten kan vi oftast påbörja inom 1 till 2 veckor efter överenskommelse och platsbesök.',
       },
     ],
   },
   {
     slug: 'byggnation',
-    title: 'Byggnation',
-    shortDescription: 'Kundanpassade byggprojekt, garage, attefallshus, altaner och träkonstruktioner med gedigen kvalitet och finish.',
-    heroText: 'Kvalitativ byggnation och snickeri anpassat efter dina visioner och behov.',
-    detailedDescription: `Söker du en pålitlig byggare för att uppföra ett garage, attefallshus, utbyggnad eller ett rejält trädäck? Dyringe Entreprenad AB utför kundanpassade byggnationer med starkt fokus på hållbarhet, funktion och finish.
+    title: 'Husgrunder & Byggnation',
+    shortDescription: 'Stabila husgrunder, betongplattor, formsättning och kundanpassad byggverksamhet med gedigen kvalitet.',
+    heroText: 'Kvalitativa husgrunder och byggnationer utförda med millimeterprecision och hållbarhet i fokus.',
+    detailedDescription: `En solid och välisolerad husgrund är grundförutsättningen för varje lyckad byggnation. WI Mark & Anläggning AB anlägger husgrunder, gjuter platta på mark och utför byggverksamhet anpassad efter dina ritningar och behov.
 
-Vi tar hand om hela byggprocessen från gjuten grund och regelstomme till färdigställd fasad och tak. Som privatperson kan du självklart nyttja 30 % ROT avdrag på arbetskostnaden.`,
+Vi tar hand om hela kedjan från schaktning och bärlager till isolering, armering och formsättning för villor, garage och tillbyggnader i Jönköping med omnejd.`,
     heroImage: '/service-byggnation.webp',
     image: '/service-byggnation.webp',
     href: '/tjanster#byggnation',
-    tag: 'Byggnation',
-    badge: 'ROT avdrag 30%',
+    tag: 'Husgrunder',
+    badge: 'Stabila Grunder',
     highlights: [
-      'Garage, attefallshus och förråd',
-      'Altaner, trädäck och staket',
-      'Tillbyggnader och träkonstruktioner',
-      'Gediget hantverk med fasta priser',
+      'Platta på mark för villa och garage',
+      'Grundläggning och kantelement',
+      'Formsättning, armering och isolering',
+      'Kundanpassade bygg och tillbyggnadsprojekt',
     ],
     faq: [
       {
-        question: 'Hur fungerar ROT avdraget vid byggnation?',
-        answer: 'Vid ombyggnad och tillbyggnad på befintlig bostad drar vi av 30 % av arbetskostnaden direkt på fakturan och sköter all administration med Skatteverket.',
+        question: 'Gör ni hela grundarbetet inklusive schakt och gjutning?',
+        answer: 'Ja, vi erbjuder en smidig helhetslösning där vi hanterar både schaktning, dränerande bärlager, isolering, armering och gjutning.',
       },
       {
-        question: 'Hjälper ni till med underlag inför bygglov?',
-        answer: 'Ja, vi bistår gärna med rådgivning och måttunderlag inför din bygglovsansökan eller anmälan.',
+        question: 'Kan man nyttja ROT avdrag vid grund och byggarbeten?',
+        answer: 'Ja, vid ombyggnader, tillbyggnader och renoveringar på befintliga bostäder kan du nyttja 30 % ROT avdrag på arbetskostnaden direkt via fakturan.',
       },
     ],
   },
   {
     slug: 'betong',
-    title: 'Betong',
-    shortDescription: 'Gjutning av betongplatta på mark, armering, socklar, stödmurar och formgjutning för villor, garage och industri.',
-    heroText: 'Stabila och hållbara betonggrunder gjutna med millimeterprecision.',
-    detailedDescription: `En stabil betonggrund är nyckeln till ett lyckat bygge. Dyringe Entreprenad AB utför gjutning av platta på mark för villor, fritidshus, garage och industrilokaler i Örebro med omnejd.
+    title: 'Stenytor & Murar',
+    shortDescription: 'Stensättning, stödmurar, marksten, kantsten och stenytor som förvandlar din tomt och utemiljö.',
+    heroText: 'Hållbara murar och stilrena stenytor anlagda med hantverksskicklighet och precision.',
+    detailedDescription: `Vill du anlägga en vacker uppfart med marksten, bygga en stadig stödmur eller skapa trivsamma stenytor i trädgården? WI Mark & Anläggning AB är specialister på murar och stenytor som tål det nordiska klimatet.
 
-Vi ombesörjer hela kedjan: schaktning, bärlager, isolering, golvvärmeläggning, armering och betonggjutning med professionell glättning för ett perfekt plant och slitstarkt golv.`,
+Vi hjälper dig från grundlig markberedning och bärlager till perfekt lagda stenytor och stabila stödmurar som ger din fastighet ett rejält lyft.`,
     heroImage: '/service-betong.webp',
     image: '/service-betong.webp',
     href: '/tjanster#betong',
-    tag: 'Betong',
-    badge: 'Stabila Grunder',
+    tag: 'Murar & Stenytor',
+    badge: 'Hållbar Finish',
     highlights: [
-      'Platta på mark för villa och garage',
-      'Armering och isolering',
-      'Gjutning av stödmurar och socklar',
-      'Professionell glättning och finish',
+      'Stödmurar och trädgårdsmurar',
+      'Stensättning av uppfarter och gångar',
+      'Marksten, plattor och kantsten',
+      'Trädgårdstjänster och markutjämning',
     ],
     faq: [
       {
-        question: 'Vad krävs innan man kan gjuta en betongplatta?',
-        answer: 'Marken behöver schaktas ur, fyllas med dränerande bärlager och packas ordentligt innan kantelement, isolering, armering och eventuell golvvärme monteras.',
+        question: 'Varför är underarbetet så viktigt vid stensättning?',
+        answer: 'Ett ordentligt bärlager och noggrann packning förhindrar sättningar, tjälskador och ojämnheter, vilket säkerställer att stenytan håller sig plan och snygg i många år.',
       },
       {
-        question: 'Gjuter ni både för privatpersoner och företag?',
-        answer: 'Ja, vi åtar oss betonggjutningar för allt från privata garage och husgrunder till kommersiella maskinhallar.',
+        question: 'Bygger ni både fristående murar och stödmurar i slänt?',
+        answer: 'Ja, vi anlägger både dekorativa murar och kraftiga stödmurar som säkrar nivåskillnader och slänter på din tomt.',
       },
     ],
   },
   {
     slug: 'maskinforare',
-    title: 'Maskinförare',
-    shortDescription: 'Kompletta entreprenadtjänster och yrkesskickliga maskinförare för anläggning, materialflytt och markberedning.',
-    heroText: 'Erfarna maskinförare och moderna maskiner för krävande entreprenaduppdrag.',
-    detailedDescription: `Behöver du anlita en erfaren maskinförare eller boka maskintjänster för ditt entreprenadprojekt? Dyringe Entreprenad AB erbjuder professionell maskinkörning med hög kapacitet och flexibilitet.
+    title: 'Mark & Anläggning',
+    shortDescription: 'Kompletta entreprenadtjänster, maskinförare, transportverksamhet och uthyrning av transportredskap.',
+    heroText: 'Mångsidig entreprenad och maskintjänster för smidig genomförande av alla markprojekt.',
+    detailedDescription: `Behöver du anlita yrkesskickliga maskinförare eller boka transportverksamhet och marktjänster? WI Mark & Anläggning AB erbjuder heltäckande entreprenadverksamhet med modern utrustning och hög flexibilitet.
 
-Med bred kompetens inom grävning, planering och materialhantering ser vi till att dina markprojekt flyter på effektivt och enligt tidsplan. Vi arbetar snabbt, säkert och med full hänsyn till omgivningen.`,
+Vi hanterar materialtransporter, schaktning, markplanering och uthyrning av transportredskap i Jönköping, Huskvarna, Habo och omnejd. Vi arbetar alltid med säkerhet, punktlighet och kvalitet i första rummet.`,
     heroImage: '/service-maskinforare.webp',
     image: '/service-maskinforare.webp',
     href: '/tjanster#maskinforare',
-    tag: 'Maskinförare',
-    badge: 'Kvalitet & Erfarenhet',
+    tag: 'Mark & Anläggning',
+    badge: 'Totalentreprenad',
     highlights: [
-      'Erfarna och certifierade maskinförare',
-      'Moderna grävmaskiner och utrustning',
-      'Materialhantering och markberedning',
-      'Flexibla upplägg per timme eller fast pris',
+      'Entreprenadverksamhet inom mark och anläggning',
+      'Erfarna maskinförare med modern maskinpark',
+      'Transportverksamhet och materialflytt',
+      'Uthyrning av transportredskap och trädgårdstjänster',
     ],
     faq: [
       {
-        question: 'Arbetar ni på löpande räkning eller fast pris?',
-        answer: 'Vi erbjuder både fasta offerter för hela entreprenader och löpande timdebitering för maskintjänster, beroende på vad som passar ditt projekt bäst.',
+        question: 'Erbjuder ni både fast pris och löpande timpris?',
+        answer: 'Ja, vi erbjuder fasta offerter för definierade projekt samt flexibel löpande debitering för maskintjänster och transporter.',
       },
       {
-        question: 'Vilka geografiska områden täcker ni?',
-        answer: 'Vi utgår från Örebro och utför uppdrag i hela Örebroregionen, inklusive Kumla, Hallsberg, Lekeberg och omnejd.',
+        question: 'Vilka områden arbetar ni i?',
+        answer: 'Vi utgår från Jönköping och utför entreprenaduppdrag i Jönköping, Huskvarna, Habo, Bankeryd, Vaggeryd och omnejd.',
       },
     ],
   },
 ];
 
 export default services;
-

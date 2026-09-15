@@ -320,7 +320,7 @@ export default function Navbar() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexShrink: 0 }}>
           <div className="phone-link-wrapper" style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <a
-              href="tel:0761129106"
+              href="tel:0724487667"
               className="phone-link"
               style={{
                 display: 'flex',
@@ -338,7 +338,7 @@ export default function Navbar() {
               onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-white)')}
             >
               <Phone size={14} color="var(--color-primary)" />
-              <span>076-112 91 06</span>
+              <span>072-448 76 67</span>
             </a>
           </div>
 
@@ -379,7 +379,7 @@ export default function Navbar() {
           {/* Phone icon — shown on mobile only */}
           <div className="mobile-phone-btn" style={{ position: 'relative', display: 'none' }}>
             <a
-              href="tel:0761129106"
+              href="tel:0724487667"
               aria-label="Ring oss"
               style={{
                 display: 'flex',
@@ -532,8 +532,8 @@ export default function Navbar() {
             Ring oss direkt:
           </span>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center' }}>
-            <a href="tel:0761129106" style={{ color: 'var(--color-white)', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-              <Phone size={14} color="var(--color-primary)" /> 076-112 91 06
+            <a href="tel:0724487667" style={{ color: 'var(--color-white)', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+              <Phone size={14} color="var(--color-primary)" /> 072-448 76 67
             </a>
           </div>
         </div>
@@ -549,8 +549,8 @@ export default function Navbar() {
           height: 15px;
         }
         .nav-logo {
-          height: 110px;
-          max-height: 16vh;
+          height: 130px;
+          max-height: 18vh;
           width: auto;
           display: block;
           object-fit: contain;
@@ -562,7 +562,7 @@ export default function Navbar() {
           transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .nav-logo.scrolled {
-          height: 82px;
+          height: 92px;
           background-color: transparent;
           padding: 0;
           border-radius: 0;
@@ -575,15 +575,15 @@ export default function Navbar() {
           .nav-pill { display: none !important; }
           .hamburger { display: flex !important; }
           .offert-btn { display: none !important; }
-          nav.navbar-el { padding: 12px 20px !important; }
-          nav.navbar-el.scrolled { padding: 8px 20px !important; }
+          nav.navbar-el { padding: 10px 18px !important; }
+          nav.navbar-el.scrolled { padding: 8px 18px !important; }
           .mobile-phone-btn { display: flex !important; align-items: center; }
           .nav-logo {
-            height: 75px;
+            height: 90px;
             padding: 0;
           }
           .nav-logo.scrolled {
-            height: 60px;
+            height: 72px;
             padding: 0;
           }
         }
@@ -595,4 +595,3 @@ export default function Navbar() {
     </>
   );
 }
-

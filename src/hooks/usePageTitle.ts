@@ -9,7 +9,7 @@ export function usePageTitle(title: string, description?: string) {
     document.title = title;
 
     // 2. Update Description
-    const defaultDesc = "Dyringe Entreprenad AB utför professionella entreprenadarbeten inom grävning, markarbete, byggnation, betong och maskintjänster i Örebro med omnejd.";
+    const defaultDesc = "WI Mark & Anläggning AB utför dräneringar, husgrunder, murar, stenytor och entreprenadverksamhet i Jönköping med omnejd.";
     const activeDesc = description || defaultDesc;
     
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -39,7 +39,7 @@ export function usePageTitle(title: string, description?: string) {
     // 5. Update Canonical Link & Absolute URL
     const origin = typeof window !== 'undefined' && window.location.origin.startsWith('http')
       ? window.location.origin
-      : 'https://dyringe-entreprenad.se';
+      : 'https://wi-mark.se';
     const absoluteUrl = `${origin}${pathname === '/' ? '' : pathname}`;
     const ogImageUrl = `${origin}/og-image.png`;
 
